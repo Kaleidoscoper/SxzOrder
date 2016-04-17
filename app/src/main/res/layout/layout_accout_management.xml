@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeeeeee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:background="@drawable/side_nav_bar">
+
+        <ImageButton
+            android:id="@+id/account_manage_actionbar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:background="#00000000"
+            android:clickable="true"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="20.0dip"
+            android:src="@drawable/account_setting_back"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/myaddress_actionbar_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/wode_setting_actionbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/waimai_shoplist_list_item_ratingbar_mini_height"
+                android:gravity="center"
+                android:text="账户管理"
+                android:textColor="#fffafafa"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignParentBottom="true"
+            android:background="#ffdbdcde" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginTop="@dimen/custom_item_gap"
+            android:background="@color/custom_line" />
+
+        <LinearLayout
+            android:id="@+id/wode_list1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/custom_content_lrgap"
+            android:paddingRight="@dimen/custom_content_lrgap">
+
+            <LinearLayout
+                android:id="@+id/account_image"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/custom_item_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/wode_list1_address_icon"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/custom_icon_gap"
+                    android:layout_marginRight="@dimen/custom_icon_gap"
+                    android:scaleType="center"
+                    android:src="@drawable/mypage_list_icon_location"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/wode_list1_address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="头像"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/custom_title" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/user_icon"
+                        android:layout_width="35.0dip"
+                        android:layout_height="35.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="8.0dip"
+                        android:gravity="center"
+                        fresco:placeholderImage="@drawable/sapi_default_portrait"
+                        fresco:placeholderImageScaleType="fitCenter"
+                        fresco:roundAsCircle="true" />
+
+                    <ImageView
+                        android:id="@+id/wode_list1_address_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/custom_icon_gap"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mypage_list_icon_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginBottom="@dimen/custom_item_gap"
+            android:background="@color/custom_line" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/custom_line" />
+
+        <LinearLayout
+            android:id="@+id/account_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/custom_content_lrgap"
+            android:paddingRight="@dimen/custom_content_lrgap">
+
+            <LinearLayout
+                android:id="@+id/wode_list1_refund"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/custom_item_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/wode_list1_refund_icon"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/custom_icon_gap"
+                    android:layout_marginRight="@dimen/custom_icon_gap"
+                    android:scaleType="center"
+                    android:src="@drawable/mypage_list_icon_refund"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/wode_list1_refund_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="修改密码"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/custom_title" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/wode_list1_refund_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/custom_icon_gap"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mypage_list_icon_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginBottom="@dimen/custom_item_gap"
+            android:background="@color/custom_line" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/custom_line" />
+
+        <LinearLayout
+            android:id="@+id/wode_list3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/custom_content_lrgap"
+            android:paddingRight="@dimen/custom_content_lrgap">
+
+            <LinearLayout
+                android:id="@+id/account_mail"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/custom_item_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/wode_list2_collect_icon"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/custom_icon_gap"
+                    android:layout_marginRight="@dimen/custom_icon_gap"
+                    android:scaleType="center"
+                    android:src="@drawable/mypage_list_icon_star"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/wode_list2_collect_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="邮箱"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/custom_title" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/user_mailbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="8.0dip"
+                        android:text="ergouge@qq.com"
+                        android:textColor="#ff8e8e93"
+                        android:textSize="15.0dip" />
+
+                    <ImageView
+                        android:id="@+id/wode_list2_collect_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/custom_icon_gap"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mypage_list_icon_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/MenuHorizonSplitLine" />
+
+            <LinearLayout
+                android:id="@+id/account_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/custom_item_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/wode_list2_comment_icon"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/custom_icon_gap"
+                    android:layout_marginRight="@dimen/custom_icon_gap"
+                    android:scaleType="center"
+                    android:src="@drawable/mypage_list_icon_comment"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/wode_list2_comment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="手机"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/custom_title" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/user_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="8.0dip"
+                        android:text="18782998178"
+                        android:textColor="#ff8e8e93"
+                        android:textSize="15.0dip" />
+
+                    <ImageView
+                        android:id="@+id/wode_list2_comment_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/custom_icon_gap"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mypage_list_icon_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/custom_line" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:gravity="center_vertical"
+            android:text="可用于登陆所有百度产品"
+            android:textColor="#ff7a8a99"
+            android:textSize="14.0dip" />
+
+        <View
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/custom_line" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/account_history"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/custom_content_lrgap"
+            android:paddingRight="@dimen/custom_content_lrgap">
+
+            <LinearLayout
+                android:id="@+id/wode_list3_wallet"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/custom_item_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/wode_list3_wallet_icon"
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/custom_icon_gap"
+                    android:layout_marginRight="@dimen/custom_icon_gap"
+                    android:scaleType="center"
+                    android:src="@drawable/mypage_list_icon_wallet"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/wode_list3_cwallet_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="账号操作记录"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/custom_title" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/wode_list3_wallet_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/custom_icon_gap"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mypage_list_icon_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginBottom="@dimen/custom_item_gap"
+            android:background="@color/custom_line" />
+    </LinearLayout>
+</LinearLayout>
